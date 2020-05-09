@@ -1,4 +1,4 @@
-<div>
+<div class=text-center style="color:green;background:rgb(201, 165, 165);padding: 20px;">
   <h3>T-Shirt App</h3>
 </div>
 <div class="container">
@@ -18,7 +18,8 @@ Image
 <tbody>
   <tr *ngFor="let p of products">
     <td>
-      {{p.FronImageUrl}}
+      <img height="50" (mouseover)="changeImage($event,p.BacImageUrl)"  (mouseout)="changeImage($event,p.FronImageUrl)" width="50" [src]="p.FronImageUrl"> 
+      <!-- {{p.FronImageUrl}} -->
     </td>
     <td>
       {{p.ProductName}}
@@ -26,7 +27,7 @@ Image
     <td>
       {{p.Price}}
     </td>
-    <td>
+    <td [style.color]='p.InStock<100?outofStockColor:stockColor' >
       {{p.InStock}}
     </td>
     <td>
