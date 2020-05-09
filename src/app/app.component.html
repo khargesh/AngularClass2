@@ -1,7 +1,36 @@
+<div>
+  <h3>T-Shirt App</h3>
+</div>
 <table>
-  <tr>
+  <thead>
+<th>
+Image
+</th>
+<th>
+  Name
+</th>
+<th>Price  
+</th>
+<th>
+  InStock
+</th></thead>
+<tbody>
+  <tr *ngFor="let p of products">
+    <td>
+      {{p.FronImageUrl}}
+    </td>
+    <td>
+      {{p.ProductName}}
+    </td>
+    <td>
+      {{p.Price}}
+    </td>
+    <td>
+      {{p.InStock}}
+    </td>
     <td>
       
     </td>
   </tr>
+</tbody>
 </table>

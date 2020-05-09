@@ -8,6 +8,12 @@ import { IProduct } from './IProduct';
 })
 export class AppComponent {
   title = 'T-Shirt-App';
+products:IProduct[]=[];
+
+constructor(){
+this.products=this.getProductist();
+}
+
   getProductist():IProduct[]{
 
     return [
