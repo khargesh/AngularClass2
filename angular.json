@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "T-Shirt-App": {
+    "AngularClass2": {
       "projectType": "application",
       "schematics": {},
       "root": "",
